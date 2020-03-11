@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+	
+	<title>Login Page</title>
+<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+<script>
+    $(document).ready(function(){
+      $('#display-info').mouseover(function(){
+       $('#hidden-info').show();
+	  });
+    });
+    </script>
+</head>
+<style>
+.bdy{
+background-color:whitesmoke;
+}
+</style>
+<body class="bdy">
+<div id="frm" align = "center">
+<style>
+.jumbotron{
+    background-color:PaleTurquoise;
+
+    height:350px;
+    width:350px;
+    
+    }
+	#hidden-info{
+		display: none;
+		font-size: 25px;
+		font-family: Arial, Helvetica, sans-serif;
+		font-style: italic;
+	}
+	#display-info{
+		margin-top: 100px;
+	}
+</style>
+<div class="jumbotron" >
+
+<div align="center">
+	<h3 style="margin-top: 5px; font-family: Arial, Helvetica, sans-serif; font-style: oblique;">LoginPage</h2>
+	<form action='PROCESS.php' id="form" method='post' >
+    <div align="center">
+		<p>
+			<label>
+				Username:
+			</label>
+			<input type="text" id="username" name="username">
+		</p>
+		<p>
+			<label>
+				Password:
+			</label>
+			<input type="text" id="password" name="password">
+		</p>
+      
+		<p>
+        <style>
+        .btn{width:300px;
+		height: 30px;
+		font-size: 17px;
+	}
+        </style>
+			<button type="submit" id="btn" value="login" class = "btn btn-success btn-xs">Login</button>
+		</p>
+		<a href="Sign_Up.html" style="font-size: 20px;">Sign up?</a>
+        </div>
+	</form>
+</div>
+<button id="display-info" class="btn btn-success">What To Do?</button>
+<div id="hidden-info">
+Made by riyan dharne: username and password for admin panel are both "admin" and for normal user
+is "localuser".
+</div>
+</body>
+</html>

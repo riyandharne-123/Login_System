@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Sign Up</title>
+<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+</head>
+<style>
+.bdy{
+background-color:Turquoise;
+}
+</style>
+<body class="bdy">
+<div id="frm" align = "center">
+<style>
+.jumbotron{
+    background-color:PaleTurquoise;
+
+    height:350px;
+    width:350px;
+    
+    }
+</style>
+<div class="jumbotron" >
+<h2 style="font-style: italic; font-family: Arial, Helvetica, sans-serif;">Create a new Account</h2>
+<div align="center">
+   
+	<form action='Insert_Users.php' id="form" method='post' >
+    <div align="center">
+		<p>
+			<label>
+				Username:
+			</label>
+			<input type="text" id="add_username" name="add_username">
+		</p>
+		<p>
+			<label>
+				Password:
+			</label>
+			<input type="text" id="add_password" name="add_password">
+		</p>
+      
+		<p>
+        <style>
+        .btn{width:300px;
+		height: 30px;
+		font-size: 17px;
+	}
+        </style>
+			<button type="submit" id="btn" value="login" class = "btn btn-success btn-xs">Create Account?</button>
+		</p>
+        <a href="index.html" style="font-size :15px;">Go Back?</a>
+        </div>
+	</form>
+</div>
+</body>
+</html>
